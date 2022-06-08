@@ -320,6 +320,10 @@ section {
     color: #fff;
   }
 
+  .navbar .out {
+    color: #ffc107
+  }
+
   .navbar .dropdown ul {
     display: block;
     position: absolute;
