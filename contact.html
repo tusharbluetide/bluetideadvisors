@@ -118,30 +118,27 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            <div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/5540ba38cc02093b79cfe34f65778e19?embedded=1"></div>
 
-          </div><!-- End Contact Form -->
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script type="text/javascript" src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"></script>
+
+<!-- Get notified when the form is submitted, add your own code below: -->
+<script>
+  const formkeepEmbed = document.querySelector('#formkeep-embed')
+  
+  formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+    console.log('Submitting form...')
+  })
+  
+  formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+    console.log('Submitted form...')
+  })
+  </script>
+
+          </div><!-- End Contact Form --> 
+
+          <div data-tf-widget="T94p55ZY" data-tf-hide-headers data-tf-iframe-props="title=BlueTide Advisors" data-tf-medium="snippet" style="width:50%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
         </div>
 
