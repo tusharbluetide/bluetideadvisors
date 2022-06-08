@@ -448,6 +448,10 @@ section {
     color: #fff;
   }
 
+  .navbar .out {
+    color:#ffc107
+  }
+
   .navbar .dropdown ul,
   .navbar .dropdown .dropdown ul {
     position: static;
